@@ -21,7 +21,7 @@ model = init_detector(config_fname, checkpoint_path+epoch)
 
 # List of images in the image_path
 #imgs = glob.glob(image_path)
-imgs = [i for i in os.listdir(image_path) if i.endswith('.png')]
+imgs = [image_path + i for i in os.listdir(image_path) if i.endswith('.png')]
 print(imgs)
 for i in imgs:
     print(i)
