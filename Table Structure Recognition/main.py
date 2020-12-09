@@ -5,13 +5,14 @@ from Functions.blessFunc import borderless
 import lxml.etree as etree
 import glob
 
-############ To Do ############
-image_path = 'path to directory of images'
-xmlPath = 'path to save xml'
 
-config_fname = "path to config file of model" 
-checkpoint_path = "path to checkpoint directory"
-epoch = 'epoch_file.name'
+############ To Do ############
+image_path = '/content/models/MyDrive/anaplan_data/test/'
+xmlPath = '/content/models/MyDrive/table_struct/'
+
+config_fname = "/content/models/MyDrive/models/struct_model/cascade_mask_rcnn_hrnetv2p_w32_20e.py"
+checkpoint_path = "/content/models/MyDrive/models/struct_model/"
+epoch = 'struct_model.pth'
 ##############################
 
 
