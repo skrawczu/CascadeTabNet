@@ -7,7 +7,7 @@ import glob
 
 
 ############ To Do ############
-image_path = '/content/models/MyDrive/anaplan_data/test/6984_1271965.png'
+image_path = '/content/models/MyDrive/anaplan_data/test/6984_1272531.png'
 xmlPath = '/content/models/MyDrive/table_struct/'
 
 config_fname = "/content/models/MyDrive/models/struct_model/cascade_mask_rcnn_hrnetv2p_w32_20e.py"
