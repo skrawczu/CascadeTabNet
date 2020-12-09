@@ -20,7 +20,9 @@ model = init_detector(config_fname, checkpoint_path+epoch)
 
 # List of images in the image_path
 imgs = glob.glob(image_path)
+print(imgs)
 for i in imgs:
+    print(i)
     result = inference_detector(model, i)
     res_border = []
     res_bless = []
