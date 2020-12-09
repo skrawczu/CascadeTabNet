@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 from Functions.borderFunc import extract_table
 from lxml import etree
-cv2.imshow with cv2_imshow
+from google.colab.patches import cv2_imshow
 ## Input : roi of one cell
 ## Output : bounding box for the text in that cell
 def extractTextBless(img):
