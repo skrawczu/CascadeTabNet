@@ -4,10 +4,11 @@ import cv2
 from Functions.blessFunc import borderless
 import lxml.etree as etree
 import glob
+import os
 
 
 ############ To Do ############
-image_path = '/content/models/MyDrive/anaplan_data/images/test/'
+image_path = os.listdir('/content/models/MyDrive/anaplan_data/images/test/')
 xmlPath = '/content/models/MyDrive/examples/table_struct/'
 
 config_fname = "/content/models/MyDrive/models/struct_model/cascade_mask_rcnn_hrnetv2p_w32_20e.py"
