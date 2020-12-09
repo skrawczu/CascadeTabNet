@@ -8,7 +8,7 @@ import os
 
 
 ############ To Do ############
-image_path = os.listdir('/content/models/MyDrive/anaplan_data/images/test/')
+image_path = '/content/models/MyDrive/anaplan_data/images/test/'
 xmlPath = '/content/models/MyDrive/examples/table_struct/'
 
 config_fname = "/content/models/MyDrive/models/struct_model/cascade_mask_rcnn_hrnetv2p_w32_20e.py"
@@ -20,7 +20,8 @@ epoch = 'struct_model.pth'
 model = init_detector(config_fname, checkpoint_path+epoch)
 
 # List of images in the image_path
-imgs = glob.glob(image_path)
+#imgs = glob.glob(image_path)
+imgs = [i for i in os.listdir(imge_path) if i.endwith('.png')]
 print(imgs)
 for i in imgs:
     print(i)
