@@ -9,11 +9,11 @@ import os
 
 ############ To Do ############
 image_path = '/content/models/MyDrive/anaplan_data/images/test/'
-xmlPath = '/content/models/MyDrive/examples/table_struct/'
+xmlPath = '/content/models/MyDrive/examples/table_struct_oob/'
 
 config_fname = "/content/models/MyDrive/models/struct_model/cascade_mask_rcnn_hrnetv2p_w32_20e.py"
 checkpoint_path = "/content/models/MyDrive/models/struct_model/"
-epoch = 'struct_model.pth'
+epoch = 'epoch_36.pth'
 ##############################
 
 
