@@ -32,16 +32,16 @@ for i in imgs:
     root = etree.Element("document")
     ## for border
     for r in result[0][0]:
-        if r[4]>.85:
+        if r[4]>.7:
             res_border.append(r[:4].astype(int))
     ## for cells
     for r in result[0][1]:
-        if r[4]>.85:
+        if r[4]>.7:
             r[4] = r[4]*100
             res_cell.append(r.astype(int))
     ## for borderless
     for r in result[0][2]:
-        if r[4]>.85:
+        if r[4]>.7:
             res_bless.append(r[:4].astype(int))
 
     ## if border tables detected 
