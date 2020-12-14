@@ -10,7 +10,7 @@ import os
 ############ To Do ############
 #image_path = '/content/models/MyDrive/anaplan_data/images/test/'
 image_path = '/content/models/MyDrive/test_data/'
-#xmlPath = '/content/models/MyDrive/examples/anurag_set/'
+xmlPath = '/content/models/MyDrive/test_data/'
 
 config_fname = "/content/models/MyDrive/models/struct_model/cascade_mask_rcnn_hrnetv2p_w32_20e.py"
 #config_fname = "/content/models/MyDrive/models/top50_model/cascade_mask_rcnn_hrnetv2p_w32_20e.py"
