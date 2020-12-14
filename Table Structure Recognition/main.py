@@ -19,7 +19,7 @@ checkpoint_path = "/content/models/MyDrive/models/struct_model/"
 #checkpoint_path = "/content/models/MyDrive/models/top50_model/"
 
 epoch = 'struct_model.pth'
-epoch = 'invoice_table_det_model.pth'
+#epoch = 'invoice_table_det_model.pth'
 ##############################
 
 
