@@ -44,7 +44,7 @@ for i in imgs:
         table_res.append(r[:5])
     for r in result[0][2]:
         table_res.append(r[:5])
-    pd.DataFrame(table_res).to_csv(xmlPath + 'table_dets.csv')
+    pd.DataFrame(table_res).to_csv(xmlPath + i.split('/')[-1][:-3] + 'csv')
 
     ## for border
     for r in result[0][0]:
