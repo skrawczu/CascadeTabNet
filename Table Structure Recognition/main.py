@@ -5,6 +5,7 @@ from Functions.blessFunc import borderless
 import lxml.etree as etree
 import glob
 import os
+import pandas as pd
 
 
 ############ To Do ############
@@ -35,7 +36,16 @@ for i in imgs:
     res_border = []
     res_bless = []
     res_cell = []
+    table_res = []
     root = etree.Element("document")
+
+    ## score and bbox
+    for r in result[0][0]:
+        table_res.append(r[:5])
+    for r in result[0][2]:
+        table_res.append(r[:5])
+    pd.DataFrame(table_res).to_csv(xmlPath + 'table_dets.csv')
+
     ## for border
     for r in result[0][0]:
         if r[4]>.7:
